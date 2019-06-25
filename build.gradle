@@ -5,7 +5,7 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
@@ -15,11 +15,16 @@ buildscript {
     }
 }
 
+ext {
+    version_retrofit2 = "2.6.0"
+    version_rxandroid = "2.1.1"
+}
+
 allprojects {
     repositories {
         google()
         jcenter()
-        
+
     }
 }
 
