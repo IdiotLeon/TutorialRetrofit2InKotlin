@@ -1,7 +1,6 @@
 package com.idiotleon.tutorialretrofit2
 
-import android.database.Observable
-import android.graphics.ColorSpace
+import io.reactivex.Observable
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
@@ -19,7 +18,7 @@ interface WikiApiService {
     ): Observable<Model.Result>
 
     companion object {
-        val BASE_URL = "https://en.wikipedia.org"
+        val BASE_URL = "https://en.wikipedia.org/w/"
         fun create(): WikiApiService {
 
             val retrofit = Retrofit.Builder()
